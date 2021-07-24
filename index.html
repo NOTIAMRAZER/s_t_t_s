@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Speech to text</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+    <body>
+        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Menu Bar |</a>
+            </div>
+    
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#s_t">Speech to Text</a></li>
+                    <li><a href="#t_s">Text to Speech</a></li>
+                </ul>
+            </div>
+            </nav>
+        
+        <div class="container">
+            <section id="s_t">
+            <center>
+                <a href="" id="link" download="myselfie.png"></a>
+                <h1>
+                    Voice Selfie 
+                    <img id="logo_img" src="icon.png">
+                </h1>
+                <hr>
+                <br>
+                <br>
+                <h4 style="color:white;">Press allow when the popup comes to continue....</h4>
+                <hr>
+
+                <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Speech to Text</h1>
+                <div class="form-group">
+                    <h3>Say the scentence, paragraph or word you want it to type...</h3>
+                    <label>Your Voice output: </label>
+                    <textarea class="form-control" id="textbox" readonly="true"></textarea>
+                </div>
+
+                <button class="btn btn-primary" onclick="start();">Start</button>
+                <p>Press the Start Button</p>
+                <br>
+                <br>
+                </center>
+            </section>
+            <hr>
+            <br>
+            <br>
+
+            <center>
+            <section id="t_s">
+                <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Text to Speech</h1>
+                <div class="form-group">
+                    <h3>Type or paste the paragraph, word or scentence you want it to speak out...</h3>
+                    <input type="text" id="text-to-speech" placeholder="Type it here">
+                </div>
+
+                <button class="btn btn-primary" onclick="textToAudio();">Start</button>
+                <p>Press the Start Button</p>
+                <hr>
+                </section>
+                </center>
+            
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
